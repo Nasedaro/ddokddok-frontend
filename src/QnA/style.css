@@ -1,9 +1,9 @@
 .qn-a {
     background-color: #ffffff;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-left: 100px;
 }
 
 .qn-a .div {
@@ -16,7 +16,6 @@
 .qn-a .line {
     height: 4px;
     left: 56px;
-    object-fit: cover;
     position: absolute;
     top: 329px;
     width: 304px;
@@ -24,13 +23,13 @@
 
 .qn-a .overlap {
     background-color: #ffffff;
-    border: 1px solid;
-    border-color: #3f3f3f;
+    border: 1px solid #3f3f3f;
     border-radius: 15px;
+    margin-top: 100px;
     height: 70px;
     left: 428px;
-    position: absolute;
-    top: 220px;
+    position: static;
+    top: 230px;
     width: 942px;
 }
 
@@ -40,6 +39,7 @@
     position: absolute !important;
     top: 19px !important;
     width: 30px !important;
+    margin-top: 100px;
 }
 
 .qn-a .text-wrapper {
@@ -47,6 +47,7 @@
     font-family: 'Inter-Medium', Helvetica;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 100px;
     height: 30px;
     left: 90px;
     letter-spacing: 0;
@@ -56,592 +57,127 @@
     white-space: nowrap;
 }
 
-.qn-a .group {
-    height: 44px;
-    left: 752px;
-    position: absolute;
-    top: 1496px;
-    width: 91px;
+.qn-a .navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.qn-a .overlap-group {
-    height: 44px;
-    position: relative;
-    width: 89px;
+.qn-a .navigation {
+    width: 100%;
+    background-color: #ffffff; /* 배경색 설정 */
+    border-top: 1px solid #dddddd; /* 구분선 설정 */
+    padding: 10px 0; /* 내용과 하단 여백 설정 */
+    position: relative; /* 기본 위치 유지 */
 }
 
-.qn-a .rectangle {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #3f3f3f;
-    border-radius: 10px;
-    height: 44px;
-    left: 1px;
-    position: absolute;
-    top: 0;
-    width: 88px;
+.qn-a .nav-item {
+    background-color: #bbb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-.qn-a .text-wrapper-2 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 20px;
-    font-weight: 500;
-    height: 44px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 88px;
+.qn-a .page-info {
+    margin: 0 10px;
 }
 
-.qn-a .overlap-wrapper {
-    height: 44px;
-    left: 958px;
-    position: absolute;
-    top: 1496px;
-    width: 91px;
+.qn-a .qna-list {
+    margin-top: 20px;
 }
 
-.qn-a .overlap-group-wrapper {
-    height: 44px;
-    left: 855px;
-    position: absolute;
-    top: 1496px;
-    width: 91px;
+/* .qn-a .popular-tags {
+    margin-top: 92px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #f0f0f0;
+} */
+.qn-a {
+    display: flex; /* 부모 요소를 플렉스 박스로 설정 */
 }
 
-.qn-a .overlap-2 {
-    height: 206px;
-    left: 396px;
-    position: absolute;
-    top: 330px;
-    width: 1011px;
+.qn-a .popular-tags {
+    float: left;
+    margin-left: 20px; /* QnA 리스트와의 간격 설정 */
+    margin-top: 92px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #f0f0f0;
 }
 
-.qn-a .AM {
-    height: 13px;
-    left: 297px;
-    position: absolute;
-    top: 11px;
-    width: 78px;
-}
-
-.qn-a .text-wrapper-3 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
+.qn-a .tag-title {
     font-size: 18px;
-    font-weight: 500;
-    height: 23px;
-    left: 172px;
-    letter-spacing: 0;
-    line-height: 27px;
-    position: absolute;
-    top: 5px;
-    white-space: nowrap;
-    width: 136px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.qn-a .group-2 {
-    height: 206px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1011px;
+.tag {
+    background-color: rgba(178, 229, 182, 0.8); /* 연두 계열의 밝은 색상과 투명도 설정 */
+    color: #333; /* 글자색을 어두운 색으로 설정 */
+    padding: 4px 8px; /* 내부 여백 설정 */
+    margin-right: 4px; /* 태그 사이 여백 */
+    border-radius: 4px; /* 둥근 모서리 설정 */
+    display: inline-block; /* 인라인 요소로 설정하여 줄바꿈 방지 */
 }
 
-.qn-a .img {
-    height: 1px;
-    left: 4px;
-    object-fit: cover;
-    position: absolute;
-    top: 205px;
-    width: 995px;
+.qn-a .qna-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.qn-a .overlap-3 {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #828282;
-    border-radius: 15px;
-    height: 110px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 110px;
+.qn-a .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.qn-a .text-wrapper-4 {
-    color: #828282;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 24px;
-    font-weight: 300;
-    height: 27px;
-    left: 28px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    text-align: center;
-    top: 16px;
-    white-space: nowrap;
-    width: 54px;
+.qn-a .author {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.qn-a .text-wrapper-5 {
-    color: #828282;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 24px;
-    font-weight: 300;
-    height: 30px;
-    left: 42px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    text-align: center;
-    top: 57px;
-    white-space: nowrap;
-    width: 25px;
+.qn-a .answer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-.qn-a .developer-icon-man-wrapper {
-    background-color: #d9d9d9;
-    border-radius: 15px;
-    height: 30px;
-    left: 126px;
-    position: absolute;
-    top: 5px;
-    width: 30px;
+.qn-a .answer-label {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.qn-a .answer-count {
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .qn-a .developer-icon-man {
-    height: 21px;
-    left: 5px;
-    object-fit: cover;
-    position: absolute;
-    top: 3px;
-    width: 20px;
-}
-
-.qn-a .div-wrapper {
-    height: 31px;
-    left: 124px;
-    position: absolute;
-    top: 162px;
-    width: 59px;
-}
-
-.qn-a .overlap-group-2 {
-    background-color: #bbded6;
-    height: 31px;
-    position: relative;
-    width: 57px;
-}
-
-.qn-a .text-wrapper-6 {
-    color: #61c0bf;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 25px;
-    left: 1px;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    text-align: center;
-    top: 3px;
-    white-space: nowrap;
-    width: 56px;
-}
-
-.qn-a .overlap-4 {
-    height: 22px;
-    left: 191px;
-    position: absolute;
-    top: 166px;
-    width: 139px;
-}
-
-.qn-a .text-wrapper-7 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 21px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 1px;
-    white-space: nowrap;
-    width: 79px;
-}
-
-.qn-a .text-wrapper-8 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 21px;
-    left: 60px;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 0;
-    white-space: nowrap;
-    width: 79px;
-}
-
-.qn-a .text-wrapper-9 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 28px;
-    font-weight: 300;
-    height: 40px;
-    left: 126px;
-    letter-spacing: 0;
-    line-height: 42px;
-    position: absolute;
-    top: 42px;
-    white-space: nowrap;
-    width: 473px;
-}
-
-.qn-a .p {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 54px;
-    left: 124px;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 94px;
-    width: 875px;
-}
-
-.qn-a .q-a {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 32px;
-    font-weight: 500;
-    height: 48px;
-    left: 78px;
-    letter-spacing: 0;
-    line-height: 48px;
-    position: absolute;
-    top: 165px;
-    white-space: nowrap;
-}
-
-.qn-a .text-wrapper-10 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 273px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .text-wrapper-11 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 353px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .text-wrapper-12 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 521px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .text-wrapper-13 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 577px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .text-wrapper-14 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 465px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .text-wrapper-15 {
-    color: #000000;
-    font-family: 'Inter-Medium', Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 35px;
-    left: 56px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 409px;
-    white-space: nowrap;
-    width: 159px;
-}
-
-.qn-a .overlap-5 {
-    height: 206px;
-    left: 396px;
-    position: absolute;
-    top: 560px;
-    width: 1009px;
-}
-
-.qn-a .group-3 {
-    height: 206px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1009px;
-}
-
-.qn-a .overlap-6 {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #000000;
-    border-radius: 15px;
-    height: 110px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 110px;
-}
-
-.qn-a .text-wrapper-16 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 24px;
-    font-weight: 300;
-    height: 27px;
-    left: 28px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    text-align: center;
-    top: 16px;
-    white-space: nowrap;
-    width: 54px;
-}
-
-.qn-a .text-wrapper-17 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 24px;
-    font-weight: 300;
+    width: 30px;
     height: 30px;
-    left: 42px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    text-align: center;
-    top: 57px;
-    white-space: nowrap;
-    width: 25px;
 }
 
-.qn-a .text-wrapper-18 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 21px;
-    left: 191px;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 167px;
-    white-space: nowrap;
-    width: 79px;
+.qn-a .tags {
+    margin-bottom: 10px;
 }
 
-.qn-a .overlap-7 {
-    height: 206px;
-    left: 396px;
-    position: absolute;
-    top: 790px;
-    width: 1009px;
-}
-
-.qn-a .overlap-8 {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #ffbf00;
-    border-radius: 15px;
-    height: 110px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 110px;
-}
-
-.qn-a .text-wrapper-19 {
-    color: #ffbf00;
-    font-family: 'Inter-Light', Helvetica;
+.qn-a .title {
     font-size: 24px;
-    font-weight: 300;
-    height: 27px;
-    left: 28px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    text-align: center;
-    top: 16px;
-    white-space: nowrap;
-    width: 54px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.qn-a .text-wrapper-20 {
-    color: #ffbf00;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 24px;
-    font-weight: 300;
-    height: 30px;
-    left: 42px;
-    letter-spacing: 0;
-    line-height: 36px;
-    opacity: 0.6;
-    position: absolute;
-    text-align: center;
-    top: 57px;
-    white-space: nowrap;
-    width: 25px;
-}
-
-.qn-a .overlap-9 {
-    height: 206px;
-    left: 396px;
-    position: absolute;
-    top: 1250px;
-    width: 1011px;
-}
-
-.qn-a .text-wrapper-21 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 28px;
-    font-weight: 300;
-    height: 40px;
-    left: 126px;
-    letter-spacing: 0;
-    line-height: 42px;
-    position: absolute;
-    top: 42px;
-    white-space: nowrap;
-    width: 848px;
-}
-
-.qn-a .overlap-10 {
-    height: 206px;
-    left: 396px;
-    position: absolute;
-    top: 1020px;
-    width: 1013px;
-}
-
-.qn-a .group-4 {
-    height: 206px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1013px;
-}
-
-.qn-a .text-wrapper-22 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 28px;
-    font-weight: 300;
-    height: 40px;
-    left: 126px;
-    letter-spacing: 0;
-    line-height: 42px;
-    position: absolute;
-    top: 42px;
-    white-space: nowrap;
-    width: 486px;
-}
-
-.qn-a .overlap-11 {
-    height: 22px;
-    left: 280px;
-    position: absolute;
-    top: 167px;
-    width: 204px;
-}
-
-.qn-a .text-wrapper-23 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 21px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 0;
-    white-space: nowrap;
-    width: 79px;
-}
-
-.qn-a .text-wrapper-24 {
-    color: #000000;
-    font-family: 'Inter-Light', Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    height: 21px;
-    left: 76px;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: absolute;
-    top: 1px;
-    white-space: nowrap;
-    width: 128px;
+.qn-a .content {
+    line-height: 1.5;
 }
